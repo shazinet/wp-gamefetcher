@@ -40,7 +40,7 @@ function wp_gamefetcher_shortcode($atts) {
     $atts = shortcode_atts(
         array(
             'ordering'  => '-rating',
-            'page_size' => 3,
+            'page_size' => 5,
         ),
         $atts,
         'wp_gamefetcher'

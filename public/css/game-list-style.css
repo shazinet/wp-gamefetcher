@@ -59,3 +59,11 @@
   align-items: center;
   justify-content: space-between;
 }
+
+.wp-gamefetcher-error {
+  background-color: #f8d7da;
+  border-radius: 6px;
+  border: 1px solid #f5c2c7;
+  color: #842029;
+  padding: 1rem;
+}
