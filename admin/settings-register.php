@@ -47,14 +47,36 @@ function wp_gamefetcher_register_settings() {
 		'wp_gamefetcher_callback_section_api', 
 		'wp_gamefetcher'
 	);
+
+    /*
+	
+	add_settings_field(
+    	string   $id, 
+		string   $title, 
+		callable $callback, 
+		string   $page, 
+		string   $section = 'default', 
+		array    $args = []
+	);
+	
+	*/
+	
+	add_settings_field(
+		'api_url',
+		esc_html__('API URL', 'wp-gamefetcher'),
+		'wp_gamefetcher_callback_field_api',
+		'wp_gamefetcher', 
+		'wp_gamefetcher_section_api', 
+		[ 'id' => 'api_url', 'label' => esc_html__('API URL from rawg.io', 'wp-gamefetcher') ]
+	);
+	
+	add_settings_field(
+		'api_key',
+		esc_html__('API Key', 'wp-gamefetcher'),
+		'wp_gamefetcher_callback_field_api',
+		'wp_gamefetcher', 
+		'wp_gamefetcher_section_api', 
+		[ 'id' => 'api_key', 'label' => esc_html__('API Key from rawg.io', 'wp-gamefetcher') ]
+	);
 }
 add_action( 'admin_init', 'wp_gamefetcher_register_settings' );
-
-
-
-// callback: API section
-function wp_gamefetcher_callback_section_api() {
-	
-	echo '<p>'. esc_html__('These settings enable you to customize the WP Login screen.', 'wp-gamefetcher') .'</p>';
-	
-}

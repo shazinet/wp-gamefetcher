@@ -32,7 +32,7 @@ function wp_gamefetcher_add_sublevel_menu() {
 		esc_html__('WP GameFetcher Settings', 'wp-gamefetcher'),
 		esc_html__('WP GameFetcher', 'wp-gamefetcher'),
 		'manage_options',
-		'wp-gamefetcher',
+		'wp_gamefetcher',
 		'wp_gamefetcher_display_settings_page'
 	);
 	

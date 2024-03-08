@@ -28,5 +28,19 @@ if ( is_admin() ) {
 	require_once plugin_dir_path( __FILE__ ) . 'admin/admin-menu.php';
 	require_once plugin_dir_path( __FILE__ ) . 'admin/settings-page.php';
 	require_once plugin_dir_path( __FILE__ ) . 'admin/settings-register.php';
+	require_once plugin_dir_path( __FILE__ ) . 'admin/settings-callbacks.php';
+	require_once plugin_dir_path( __FILE__ ) . 'admin/settings-validate.php';
+    
+}
+
+
+
+// default plugin options
+function wp_gamefetcher_options_default() {
+
+	return array(
+		'api_url'   => 'https://api.rawg.io/api/games',
+		'api_key'   => '4a0759f479e24aa1bd70e4e9b8893a1f',
+	);
 
 }
