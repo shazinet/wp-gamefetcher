@@ -22,6 +22,16 @@ if ( ! defined( 'ABSPATH' ) ) {
 
 
 
+// load text domain
+function wp_gamefetcher_load_textdomain() {
+
+	load_plugin_textdomain( 'wp-gamefetcher', false, plugin_dir_path( __FILE__ ) . 'languages/' );
+
+}
+add_action( 'plugins_loaded', 'wp_gamefetcher_load_textdomain' );
+
+
+
 // include plugin dependencies: admin only
 if ( is_admin() ) {
 
@@ -32,6 +42,11 @@ if ( is_admin() ) {
 	require_once plugin_dir_path( __FILE__ ) . 'admin/settings-validate.php';
     
 }
+
+
+
+// include plugin dependencies: admin and public
+require_once plugin_dir_path( __FILE__ ) . 'includes/core-functions.php';
 
 
 
