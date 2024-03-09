@@ -3,7 +3,7 @@ const { TextControl } = wp.components;
 const { createElement } = wp.element;
 
 registerBlockType('wp-gamefetcher/wp-gamefetcher-block', {
-    title: __('WP GameFetcher Block', 'wp-gamefetcher'),
+    title: 'WP GameFetcher Block',
     icon: 'shield',
     category: 'common',
     attributes: {
