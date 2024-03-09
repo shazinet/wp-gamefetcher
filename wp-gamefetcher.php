@@ -1,7 +1,7 @@
 <?php
 /**
  * Plugin Name: WP GameFetcher
- * Plugin URI: https://yourwebsite.com/wp-gamefetcher
+ * Plugin URI: https://github.com/shazinet/wp-gamefetcher
  * Description: A WordPress plugin to fetch and display game data from the rawg.io API.
  * Version: 1.0.0
  * Author: Hamidreza Sheikholeslami
