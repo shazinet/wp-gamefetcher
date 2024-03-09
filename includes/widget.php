@@ -31,7 +31,7 @@ class WP_GameFetcher_Widget extends WP_Widget {
 
     // Display WP GameFetcher content without images
     echo '<ul class="wp-gamefetcher-list">';
-    echo do_shortcode('[wp_gamefetcher ordering="-rating" page_size="5"]');
+    echo do_shortcode('[wp-gamefetcher ordering="-rating" page_size="5"]');
     echo '</ul>';
 
     echo $args['after_widget'];

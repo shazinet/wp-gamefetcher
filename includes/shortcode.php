@@ -57,4 +57,4 @@ function wp_gamefetcher_shortcode($atts) {
     return ob_get_clean();
 }
 
-add_shortcode('wp_gamefetcher', 'wp_gamefetcher_shortcode');
+add_shortcode('wp-gamefetcher', 'wp_gamefetcher_shortcode');

@@ -42,7 +42,7 @@ registerBlockType('wp-gamefetcher/wp-gamefetcher-block', {
     },
     save: function (props) {
         const { attributes } = props;
-        const shortcode = `[wp_gamefetcher ordering="${attributes.ordering}" page_size="${attributes.pageSize}"]`;
+        const shortcode = `[wp-gamefetcher ordering="${attributes.ordering}" page_size="${attributes.pageSize}"]`;
 
         return createElement('div', null, shortcode);
     },
