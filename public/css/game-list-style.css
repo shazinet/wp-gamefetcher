@@ -37,7 +37,7 @@
   border-width: 0;
   color: #fff;
   font-family: inherit;
-  font-size: 0.9rem;
+  /* font-size: 0.9rem; */
   font-style: normal;
   font-weight: 500;
   line-height: inherit;
@@ -58,6 +58,7 @@
   gap: 35px;
   align-items: center;
   justify-content: space-between;
+  margin-top: 15px;
 }
 
 .wp-gamefetcher-error {
@@ -70,4 +71,10 @@
 
 .wp-gamefetcher-list .wp-gamefetcher-image {
   display: none;
+}
+.wp-gamefetcher-list h3 {
+  font-size: small;
+}
+.wp-gamefetcher-cta p {
+  margin: 0;
 }

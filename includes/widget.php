@@ -16,8 +16,8 @@ class WP_GameFetcher_Widget extends WP_Widget {
     public function __construct() {
         parent::__construct(
             'wp_gamefetcher_widget',
-            'WP GameFetcher Widget',
-            array('description' => 'Display game cards using WP GameFetcher.')
+            __('WP GameFetcher Widget', 'wp-gamefetcher'),
+            array('description' => esc_html__( 'Display game cards using WP GameFetcher.', 'wp-gamefetcher' ))
         );
     }
 
@@ -43,7 +43,7 @@ class WP_GameFetcher_Widget extends WP_Widget {
     $title = isset($instance['title']) ? esc_attr($instance['title']) : '';
     ?>
     <p>
-        <label for="<?php echo $this->get_field_id('title'); ?>">Title:</label>
+        <label for="<?php echo $this->get_field_id('title'); ?>"><?php _e('Title:', 'wp-gamefetcher'); ?></label>
         <input class="widefat" id="<?php echo $this->get_field_id('title'); ?>" name="<?php echo $this->get_field_name('title'); ?>" type="text" value="<?php echo $title; ?>">
     </p>
     <?php

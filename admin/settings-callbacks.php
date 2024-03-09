@@ -18,7 +18,7 @@ function wp_gamefetcher_callback_section_api() {
 	
 }
 
-// callback: text field
+// callback: API input fields
 function wp_gamefetcher_callback_field_api( $args ) {
 	
 	$options = get_option( 'wp_gamefetcher_options', wp_gamefetcher_options_default() );

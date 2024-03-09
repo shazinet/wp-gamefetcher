@@ -1,0 +1,99 @@
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: WP GameFetcher\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-03-09 04:49+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: \n"
+"Language: \n"
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Loco https://localise.biz/\n"
+"X-Loco-Version: 2.6.6; wp-6.4.3\n"
+"X-Domain: wp-gamefetcher"
+
+#. Description of the plugin
+msgid "A WordPress plugin to fetch and display game data from the rawg.io API."
+msgstr ""
+
+#: admin/settings-register.php:75
+msgid "API Key"
+msgstr ""
+
+#: admin/settings-register.php:79
+msgid "API Key from rawg.io"
+msgstr ""
+
+#: admin/settings-register.php:46
+msgid "API Settings"
+msgstr ""
+
+#: admin/settings-register.php:66
+msgid "API URL"
+msgstr ""
+
+#: admin/settings-register.php:70
+msgid "API URL from rawg.io"
+msgstr ""
+
+#: includes/widget.php:20
+msgid "Display game cards using WP GameFetcher."
+msgstr ""
+
+#: includes/api.php:54
+msgid "Error: No data returned from the API."
+msgstr ""
+
+#: includes/api.php:41
+msgid ""
+"Error: Unable to fetch data. Please check your API credentials and try again."
+msgstr ""
+
+#: includes/api.php:35
+msgid "Error: Unable to fetch data. Please try again later."
+msgstr ""
+
+#. Author of the plugin
+msgid "Hamidreza Sheikholeslami"
+msgstr ""
+
+#. Author URI of the plugin
+msgid "https://hoomaan.dev/"
+msgstr ""
+
+#. URI of the plugin
+msgid "https://yourwebsite.com/wp-gamefetcher"
+msgstr ""
+
+#: includes/shortcode.php:48
+msgid "More info..."
+msgstr ""
+
+#: includes/shortcode.php:49
+msgid "Rating:"
+msgstr ""
+
+#: admin/settings-callbacks.php:17
+msgid "These settings enable you to customize the WP Login screen."
+msgstr ""
+
+#: includes/widget.php:46
+msgid "Title:"
+msgstr ""
+
+#. Name of the plugin
+#: admin/admin-menu.php:33
+msgid "WP GameFetcher"
+msgstr ""
+
+#: admin/admin-menu.php:32
+msgid "WP GameFetcher Settings"
+msgstr ""
+
+#: includes/widget.php:19
+msgid "WP GameFetcher Widget"
+msgstr ""

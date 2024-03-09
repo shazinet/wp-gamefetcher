@@ -3,7 +3,7 @@ const { TextControl } = wp.components;
 const { createElement } = wp.element;
 
 registerBlockType('wp-gamefetcher/wp-gamefetcher-block', {
-    title: 'WP GameFetcher Block',
+    title: __('WP GameFetcher Block', 'wp-gamefetcher'),
     icon: 'shield',
     category: 'common',
     attributes: {
@@ -24,16 +24,16 @@ registerBlockType('wp-gamefetcher/wp-gamefetcher-block', {
             createElement(
                 TextControl,
                 {
-                    label: 'Ordering',
+                    label: __('Ordering', 'wp-gamefetcher'),
                     value: attributes.ordering,
-                    onChange: (newValue) => setAttributes({ ordering: newValue }),
+                    onChange: (newValue) => setAttributes({ ordering: sanitize_text_field(newValue) }),
                 }
             ),
             createElement(
                 TextControl,
                 {
                     type: 'number',
-                    label: 'Page Size',
+                    label: __('Page Size', 'wp-gamefetcher'),
                     value: attributes.pageSize,
                     onChange: (newValue) => setAttributes({ pageSize: parseInt(newValue) }),
                 }

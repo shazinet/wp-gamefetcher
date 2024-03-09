@@ -46,8 +46,10 @@ if ( is_admin() ) {
 
 
 // include plugin dependencies: admin and public
-require_once plugin_dir_path( __FILE__ ) . 'includes/core-functions.php';
-require_once plugin_dir_path( __FILE__ ) . 'includes/wp-gamefetcher-widget.php';
+require_once plugin_dir_path( __FILE__ ) . 'includes/api.php';
+require_once plugin_dir_path( __FILE__ ) . 'includes/shortcode.php';
+require_once plugin_dir_path( __FILE__ ) . 'includes/enqueue.php';
+require_once plugin_dir_path( __FILE__ ) . 'includes/widget.php';
 
 
 
@@ -60,15 +62,3 @@ function wp_gamefetcher_options_default() {
 	);
 
 }
-
-function enqueue_wp_gamefetcher_block() {
-    wp_enqueue_script(
-        'wp-gamefetcher-block',
-        plugin_dir_url(__FILE__) . 'includes/wp-gamefetcher-block.js',
-        array('wp-blocks', 'wp-components', 'wp-editor'),
-        null,
-        true
-    );
-}
-
-add_action('enqueue_block_editor_assets', 'enqueue_wp_gamefetcher_block');
