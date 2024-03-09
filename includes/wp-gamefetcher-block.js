@@ -24,7 +24,7 @@ registerBlockType('wp-gamefetcher/wp-gamefetcher-block', {
             createElement(
                 TextControl,
                 {
-                    label: __('Ordering', 'wp-gamefetcher'),
+                    label: 'Ordering',
                     value: attributes.ordering,
                     onChange: (newValue) => setAttributes({ ordering: sanitize_text_field(newValue) }),
                 }
@@ -33,7 +33,7 @@ registerBlockType('wp-gamefetcher/wp-gamefetcher-block', {
                 TextControl,
                 {
                     type: 'number',
-                    label: __('Page Size', 'wp-gamefetcher'),
+                    label: 'Page Size',
                     value: attributes.pageSize,
                     onChange: (newValue) => setAttributes({ pageSize: parseInt(newValue) }),
                 }
