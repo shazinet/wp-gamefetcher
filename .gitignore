@@ -1,0 +1,55 @@
+# Ignore system files
+*.DS_Store
+*.log
+Thumbs.db
+desktop.ini
+
+# Ignore WordPress core files
+wp-config.php
+wp-content/*
+!wp-content/plugins/
+wp-content/uploads/
+
+# Ignore development files
+node_modules/
+npm-debug.log
+yarn-error.log
+
+# Ignore OS-specific files
+.DS_Store
+Desktop.ini
+Thumbs.db
+
+# Ignore build and distribution files
+/build/
+/dist/
+
+# Ignore local configuration files
+/local-config.php
+/local-config-sample.php
+
+# Ignore Composer dependencies
+/vendor/
+
+# Ignore IDE-specific files
+.idea/
+.vscode/
+
+# Ignore compiled files
+*.min.css
+*.min.js
+
+# Ignore environment-specific files
+.env
+
+# Ignore backup files
+*.bak
+*.swp
+*~
+
+# Ignore logs
+*.log
+
+# Ignore user-specific files
+.sass-cache/
+.cache/
