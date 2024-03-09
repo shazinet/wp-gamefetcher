@@ -67,3 +67,7 @@
   color: #842029;
   padding: 1rem;
 }
+
+.wp-gamefetcher-list .wp-gamefetcher-image {
+  display: none;
+}
