@@ -95,8 +95,7 @@ Certainly! You can use the WP GameFetcher shortcode or Gutenberg block on as man
 
 = I'm encountering issues. Where can I get support? =
 
-For support, please visit the [WP GameFetcher support forum](https://wordpress.org/support/plugin/wp-gamefetcher/) on WordPress.org. Our community and developers are there to assist you.
-
+For support, please visit the GitHub repository of the plugin and report the issue or ask the questions. Our community and developers are there to assist you.
 == Screenshots ==
 
 1. This screen shot description corresponds to screenshot-1.png.
