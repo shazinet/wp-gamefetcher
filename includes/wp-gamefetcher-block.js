@@ -42,16 +42,8 @@ registerBlockType('wp-gamefetcher/wp-gamefetcher-block', {
     },
     save: function (props) {
         const { attributes } = props;
-        return createElement(
-            'div',
-            null,
-            [...Array(attributes.pageSize)].map((_, index) => (
-                createElement(
-                    'div',
-                    { key: index, className: 'wp-gamefetcher-block' },
-                    `[wp_gamefetcher ordering="${attributes.ordering}" page_size="1"]`
-                )
-            ))
-        );
+        const shortcode = `[wp_gamefetcher ordering="${attributes.ordering}" page_size="${attributes.pageSize}"]`;
+
+        return createElement('div', null, shortcode);
     },
 });
